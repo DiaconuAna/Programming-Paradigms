@@ -1,0 +1,33 @@
+
+Exercise 1 - Ctrl-., Ctrl
+
+% absolute value of a number
+
+declare
+fun {Absthat X}
+   if X > 0 then X else ~X end
+end
+
+{Browse {Absthat ~5}}
+
+
+Exercise 2
+
+declare
+fun {Pow N M}
+   if M == 0 then 1 else N * {Pow N (M-1)} end
+end
+
+{Browse {Pow 3 4}}
+
+
+Exercise 3
+
+declare
+fun {RecMax N M}
+   if N == 0 then M else 
+      if M == 0 then N else
+	 1 + {RecMax (N-1) (M-1)} end end
+end
+
+{Browse {RecMax 4 8}}

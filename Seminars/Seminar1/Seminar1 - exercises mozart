@@ -1,0 +1,31 @@
+% absolute value of a number
+
+declare
+fun {Absthat X}
+   if X > 0 then X else ~X end
+end
+
+{Browse {Modul ~5}}
+
+
+% exercise 2 - Power. m^n
+
+
+declare
+fun {Pow N M}
+   if M == 0 then 1 else N * {Pow N (M-1)} end
+end
+
+{Browse {Pow 3 4}}
+
+
+% exercise 3 - Maximum recursively
+
+declare
+fun {RecMax N M}
+   if N == 0 then M end
+   if M == 0 then N else
+   1 + {RecMax (N-1) (M-1)}end
+end
+
+{Browse {RecMax 4 7}}

@@ -1,0 +1,9 @@
+% absolute value of a number
+
+declare
+fun {Absthat X}
+   if X > 0 then X else ~X end
+end
+
+{Browse {Modul ~5}}
+     
